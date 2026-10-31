@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="theme-color" content="#05070f">
+<title>Mina Infinita</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+  <header>
+    <div class="box"><small>PONTOS</small><b id="score">0</b></div>
+    <div class="box"><small>RECORDE</small><b id="best">0</b></div>
+    <div class="box"><small>PRÓXIMO</small><canvas id="next" width="60" height="60"></canvas></div>
+  </header>
+  <div id="stage">
+    <canvas id="game"></canvas>
+    <div id="over" class="hidden">
+      <h2>SISTEMA FALHOU</h2>
+      <p>Pontos: <b id="final">0</b></p>
+      <button id="restart">REINICIAR</button>
+    </div>
+  </div>
+  <div id="evo"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
